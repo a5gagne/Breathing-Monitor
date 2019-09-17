@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="horizontal"
+    android:id="@+id/bg"
+    android:weightSum="100">
+
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/Graph"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="15" />
+
+    <LinearLayout
+        android:id="@+id/LL2"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="85">
+
+        <Button
+            android:id="@+id/bConnect"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Connect" />
+
+        <Button
+            android:id="@+id/bDisconnect"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Disconnect" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+        <ToggleButton
+            android:id="@+id/tbStream"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:textOff="Start Stream"
+            android:textOn="Stop Stream" />
+
+        <ToggleButton
+            android:id="@+id/tbScroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:textOff="Auto Scroll X"
+            android:textOn="Auto Scroll X" />
+
+        <ToggleButton
+            android:id="@+id/tbLock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:textOff="Lock X Axis"
+            android:textOn="Lock X Axis" />
+        <LinearLayout
+            android:id="@+id/llXMinus"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100">
+            <Button
+                android:id="@+id/bXMinus"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:layout_weight="50"/>
+            <Button
+                android:id="@+id/bXPlus"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:layout_weight="50"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
