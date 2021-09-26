@@ -9,4 +9,4 @@ AGagne_AndroidApp.ino on an Arduino board.
 The other members were worried about their contributions to the project, so we decided to send our data to 
 MATLAB instead. AGagne_BreathingMonitor.m is the resulting code that displays the filtered data, calculates the breathing rate, and classifies the breathing pattern.
 
-The enclosure was designed in Fusion 360 and then 3D printed
+The enclosure was designed in Fusion 360 and then 3D printed. An elastic strap with a clip wraps around the user's chest in order to hold the device against the chest.
